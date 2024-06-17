@@ -20,6 +20,7 @@
 
 <style>
  .input-container {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         position:absolute;
         top:50%;
         left:50%;
