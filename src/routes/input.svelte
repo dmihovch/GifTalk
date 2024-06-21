@@ -1,21 +1,16 @@
 <script>
+    import {rawStringToArray} from "./inputLogic";
     let rawInput = '';
-    let rawInputTemp = '';
-    function handleSubmit() {
-        rawInput = rawInputTemp;
-        rawInputTemp = '';
-    }
 </script>
 
 <div class="input-container">
-    <form on:submit={handleSubmit}>
+    <form on:submit={rawStringToArray(rawInput)}>
         <label for="sentence-input">Write Something!</label>
         <br><br>
-        <input type="text" name="sentence-input" placeholder="Something!" bind:value={rawInputTemp}>
+        <input id="sentence-input" type="text" placeholder="Something!" bind:value={rawInput}>
         <br><br>
         <input type="submit" value="Let's get Giffy">
     </form>
-    <p>{rawInput}</p>
 </div>
 
 <style>
